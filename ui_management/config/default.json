@@ -1,0 +1,33 @@
+{
+    "server": {
+      "port": 4600,
+      "host": "0.0.0.0",
+      "cors": "http://aa25959a25651433b9fc4b6f08df51d7-1292421374.us-east-2.elb.amazonaws.com:4300"
+    },
+    "docPath":{
+      "modelPath":"/usr/share/docupload/docdata/docs_models/models/"
+    },
+    "kafka": {
+      "broker": ["192.168.1.241:9094"],
+      "groupID": "test-group",
+      "topicNotification": "notification",
+      "topicSchedule":"trainer"
+    },
+    "elastic_search": {
+      "uri": "http://104.167.3.205",
+      "port": "32529",
+      "fullUrl": "http://104.167.3.205:32529/",
+      "synonym_filter_path": "analysis/wn_s.pl",
+      "acronym_filter_path": "analysis/insurance_acronyms.txt",
+      "english_stop_path": "analysis/stopwords.txt"
+
+    },
+    "verifyPasswordApi":"http://104.167.3.205:30002/uiManagement/setup/user/verifyEmail/",
+     "forgotPassword":"http://104.167.3.205:30002/uiManagement/setup/user/resetPassword/",
+     "jwtSecretKey":"findoutKmsolNeuriot@104",
+     "wordnet_synonyms_path":"analysis/wn_s.pl",
+     "searchURL":"http://104.167.3.205:30004/searchService/",
+     "fromEmail":"support@findout.ai",
+     "mailPassword":"Neuriot_123!"
+  }
+  
